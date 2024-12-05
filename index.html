@@ -194,7 +194,7 @@
             const distance = google.maps.geometry.spherical.computeDistanceBetween(userLatLng, busLatLng);
 
             // Se a distância for menor que 50 metros, mostrar o pop-up e tocar o áudio
-            if (distance <= 50) {
+            if (distance <= 100) {
               showPopup();
               sendNotification();
               playAudio(); // Reproduzir o áudio
